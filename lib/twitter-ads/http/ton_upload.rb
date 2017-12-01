@@ -10,7 +10,7 @@ module TwitterAds
     DEFAULT_RESOURCE = '/1.1/ton/bucket/'.freeze # @api private
     DEFAULT_BUCKET = 'ta_partner'.freeze # @api private
     DEFAULT_EXPIRE = (Time.now + 10 * 24 * 60 * 60).httpdate # @api private
-    DEFAULT_CHUNK_SIZE = 64 # @api private
+    DEFAULT_CHUNK_SIZE = 30 # @api private
     SINGLE_UPLOAD_MAX = 1024 * 1024 * DEFAULT_CHUNK_SIZE # @api private
     # target response time (ref. https://github.com/twitterdev/twitter-ruby-ads-sdk/pull/161)
     RESPONSE_TIME_MAX = 5000 # @api private
